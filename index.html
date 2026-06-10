@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Press — Marso Robotics</title>
+  <title>Press Room — Marso Robotics</title>
   <meta name="description" content="Official press releases and announcements from Marso Robotics."/>
   <meta property="og:type" content="website"/>
   <meta property="og:site_name" content="Marso Robotics Press Room"/>
@@ -15,38 +15,60 @@
   <meta property="og:image:height" content="680"/>
   <meta name="twitter:card" content="summary_large_image"/>
   <meta name="twitter:image" content="https://press.marsorobotics.com/assets/og-image.png"/>
-  <link rel="stylesheet" href="assets/style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet"/>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{--orange:#FF755C;--orange-dark:#F15C42;--ink:#202020;--ink-light:#666;--mid:#E8E8E8}
+    body{font-family:'Alexandria',-apple-system,sans-serif;color:var(--ink);background:#fff;-webkit-font-smoothing:antialiased;line-height:1.6}
+    .header-bar{height:4px;background:var(--orange);width:100%}
+    .site-header{text-align:center;padding:2.5rem 2rem 1.75rem}
+    .site-header .logo{height:52px;display:block;margin:0 auto}
+    .press-room-label{margin-top:0.8rem;font-size:0.65rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--ink-light)}
+    .page-intro{text-align:center;padding:1.75rem 2rem 2rem;border-bottom:1px solid var(--mid)}
+    .orange-rule{width:56px;height:3px;background:var(--orange);border-radius:2px;margin:0 auto 1.25rem}
+    .page-title{font-family:'Source Serif 4',Georgia,serif;font-size:1.6rem;font-weight:600;color:var(--ink);letter-spacing:-0.015em;line-height:1.25;margin-bottom:0.4rem}
+    .page-sub{font-size:0.75rem;color:var(--ink-light);letter-spacing:0.02em}
+    .container{max-width:740px;margin:0 auto;padding:0 2rem 4rem}
+    .section-label{font-size:0.63rem;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--ink-light);padding:1.75rem 0 1rem;border-bottom:1px solid var(--mid)}
+    .press-item{display:flex;align-items:center;gap:1.5rem;padding:1.5rem 0;border-bottom:1px solid var(--mid);text-decoration:none;color:inherit;transition:opacity .15s}
+    .press-item-left{flex-shrink:0;width:120px;text-align:right}
+    .press-item-date{display:block;font-size:0.7rem;font-weight:600;color:var(--ink-light);letter-spacing:0.01em;margin-bottom:0.45rem}
+    .press-item-tag{display:inline-block;font-size:0.58rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:var(--orange);color:#fff;padding:2px 8px;border-radius:99px}
+    .press-item-body{flex:1;min-width:0}
+    .press-item-title{font-family:'Source Serif 4',Georgia,serif;font-size:1.05rem;font-weight:600;color:var(--ink);line-height:1.35;letter-spacing:-0.01em;transition:color .15s}
+    .press-item:hover .press-item-title{color:var(--orange)}
+    .press-item-arrow{flex-shrink:0;color:var(--mid);font-size:1rem;transition:color .15s,transform .15s}
+    .press-item:hover .press-item-arrow{color:var(--orange);transform:translateX(3px)}
+    .empty-state{text-align:center;padding:4rem 0;color:var(--ink-light);font-size:0.875rem;font-family:'Source Serif 4',Georgia,serif;font-style:italic}
+    .site-footer{border-top:1px solid var(--mid);padding:2rem 2rem 1.75rem;text-align:center}
+    .footer-logo{height:30px;display:block;margin:0 auto 0.85rem;opacity:.55}
+    .site-footer p{font-size:0.65rem;letter-spacing:0.06em;color:var(--ink-light)}
+    .site-footer a{color:var(--ink-light);text-decoration:none}
+    .site-footer a:hover{color:var(--orange)}
+    @media(max-width:600px){.press-item-left{width:90px}.press-item-title{font-size:.95rem}.press-item-arrow{display:none}}
+  </style>
 </head>
 <body>
-<nav>
-  <div class="nav-inner">
-    <a href="/"><img src="assets/logo.svg" alt="Marso Robotics" class="nav-logo"/></a>
-    <span class="nav-label">Press Room</span>
-  </div>
-</nav>
-<div class="hero">
-  <div class="hero-eyebrow">Marso Robotics</div>
-  <h1 class="hero-title">Press Room</h1>
-  <p class="hero-sub">Official press releases and announcements.</p>
+<div class="header-bar"></div>
+<header class="site-header">
+  <a href="/"><img class="logo" src="assets/logo-primary.svg" alt="Marso Robotics"/></a>
+  <p class="press-room-label">Press Room</p>
+</header>
+<div class="page-intro">
+  <div class="orange-rule"></div>
+  <h1 class="page-title">Press Releases</h1>
+  <p class="page-sub">Official announcements from Marso Robotics</p>
 </div>
 <div class="container">
-  <section class="press-list">
-    <div class="press-list-title">Latest releases</div>
-    
-    <a href="releases/r-my-malchirand-joins-marso-robotics-press-release-20260610.html" class="press-item">
-      <div class="press-item-meta">
-        <span class="press-item-date">June 10, 2026</span>
-        <span class="press-item-tag">Team</span>
-      </div>
-      <div class="press-item-title">Rémy Malchirand joins Marso Robotics – Press Release</div>
-      <div class="press-item-excerpt"></div>
-    </a>
-  </section>
+  <div class="section-label">Latest releases</div>
+  
+    <div class="empty-state">No press releases published yet.</div>
 </div>
-<footer>
-  <img src="assets/logo-primary.svg" alt="Marso Robotics"/>
-  &copy; 2026 Marso Robotics. All rights reserved.
-  &nbsp;·&nbsp; <a href="mailto:communication@marsorobotics.com" style="color:inherit">communication@marsorobotics.com</a>
+<footer class="site-footer">
+  <img src="assets/logo-primary.svg" alt="Marso Robotics" class="footer-logo"/>
+  <p>&copy; 2026 Marso Robotics. All rights reserved. &nbsp;&middot;&nbsp; <a href="mailto:communication@marsorobotics.com">communication@marsorobotics.com</a></p>
 </footer>
 </body>
 </html>
